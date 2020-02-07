@@ -1,0 +1,6 @@
+This simple WordPress plugin creates secure, temporary links to files on your private AWS server. It generates a unique link at "click time", and the link will expire shortly thereafter, based on your bucket settings.
+
+To use it, simply drop the folder into your WP plugins folder, and edit the 'aws-credentials.php' file with your AWS connection settings, and the 'get-url.js' file with your site url.
+Edit locations are clearly marked in both files, do not edit anything else.
+
+Finally, simply create links in your posts using the shortcode: [aws_link file="INSERT-FILE-NAME-HERE"] where the file name is the exact name of the file residing in your AWS bucket.
